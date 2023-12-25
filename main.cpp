@@ -11,6 +11,7 @@ int main(){
   std::vector<std::string> players;
 
   // Get user input - all player names
+  std::cout << "TOURNAMENT BRACKET GENERATOR" << "\n" << std::endl;
   std::cout << "Input player names, end with 'q'" << std::endl;
   
   bool input = true;
