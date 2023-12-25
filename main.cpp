@@ -11,16 +11,21 @@ int main(){
   std::vector<std::string> players;
 
   // Get user input - all player names
-  std::cout << "TOURNAMENT BRACKET GENERATOR" << "\n" << std::endl;
-  std::cout << "Input player names, end with 'q'" << std::endl;
+  std::cout << "##############################" << "\n" << std::endl;
+  std::cout << " TOURNAMENT BRACKET GENERATOR" << "\n" << std::endl;
+  std::cout << "##############################" << "\n" << std::endl;
+  std::cout << "Input player names \nPress 'g' to generate bracket\n" << std::endl;
   
   bool input = true;
+  int playerNum = 1;
   while(input)
   {
     std::string player;
+
+    std::cout << "Player " << playerNum << ": ";
     std::cin >> player;
 
-    if(player == "q")
+    if(player == "g")
     {
       input = false;
       std::cout << "\n \n";
@@ -29,6 +34,7 @@ int main(){
     {
       players.push_back(player);
     }
+      playerNum += 1;
   }
 
   if(players.size() % 2 == 1){
@@ -62,7 +68,9 @@ int main(){
   for(Game& game : games){
     game.printGame();
   }
-}
 
+  std::cout << "\nGood luck!" << std::endl;
+
+}
 
 
