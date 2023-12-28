@@ -2,7 +2,6 @@
 #include <string_view>
 
 Game::Game(std::string player1, std::string player2){
-
   this->player1 = player1;
   this->player2 = player2;
 }

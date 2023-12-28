@@ -70,7 +70,6 @@ int main(){
   }
 
   std::cout << "\nGood luck!" << std::endl;
-
 }
 
 
