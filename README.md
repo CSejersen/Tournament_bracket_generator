@@ -1,3 +1,2 @@
 # Simple Bracket Generator
-
-Generates a random tournament bracket given player names. 
+A completely unsound implementation of a Tournament bracket generator. Takes names a inputs and generates a random knok-out style bracket. 
